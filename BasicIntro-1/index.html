@@ -8,7 +8,7 @@
     <title>JavaScript Fundamentals – Part 1</title>
     <style>
         body {
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             padding: 1rem;
@@ -22,6 +22,10 @@
             width: 100%;
             text-align: center;
             color: white;
+        }
+
+        .imp-note {
+            color: red;
         }
     </style>
 </head>
@@ -45,9 +49,34 @@
             Symbol(ES2015):value that is unique and can not be change
         </li>
         <li>BigInt(ES2020):Larger integers than the number type can not hold</li>
+        <li>NaN =>It mean it is not a valid number , typeof NaN is number in js</li>
+        <li>JS convert only to Number, string and Boolean</li>
     </ol>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table">Js
         Operators Precendence order</a>
+    <h4>Type coercion:it is happen whenever an oprator deals with two values having difference types. JS BTS convert one
+        value type to other value type so that operation is completed. JS have type coercion automatically by itself
+    </h4>
+    <ol>
+        <li>For + operator number converts into string</li>
+        <li>For - operator strings converted to number</li>
+        <li>For * operator strings converted to number</li>
+        <li>For / operator strings converted to number</li>
+    </ol>
+    <ol>
+        Truthy and falsy values:
+        <li>there are 5 falsy values in JS (0,"",undefined,null,NaN) all of these 5 values converted to false when we
+            try to convert it to boolean</li>
+        <li>
+            Every thing else called truthy value that converted to true when we try to convert them to boolean values.
+        </li>
+        <li class="imp-note">
+            Type coercion to boolean happening in two conditions=> While using logical operators and in logical
+            context(if/else)
+        </li>
+        <li>== Perform Type coercion</li>
+        <li>=== Does not perform type coercion</li>
+    </ol>
     <script src="./script.js"></script>
 </body>
 
